@@ -1,237 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lister Solijon - Portfolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="programming-code-signs.png">
-    <link rel="stylesheet" href="app-BrT74N3Y.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="programming-code-signs.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <!-- Header Section - Matching the image layout -->
+    <div class="header">
+      <div class="header-content">
+        <img src="picture.jpg" alt="Profile Picture" class="profile-picture" />
+        <div class="header-text">
+          <h1>Lister Solijon</h1>
+          <p class="location">
+            <img src="location.png" alt=""> Cagayan de Oro City,
+            Philippines
+          </p>
+          <p class="tagline">Aspiring <span class="multiple-text"></span></p>
 
-<body>
-
-    <!-- Header Section Code -->
-
-    <header class="header">
-        <a href="#" class="logo">
-            <img src="programming-code-signs.png" alt="Developer Icon">
-        </a>
-
-        <i class='bx  bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#testimonial">Testimonial</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Home Section Code -->
-
-    <section class="home" id="home">
-        <div class="home-img">
-            <img src="picture.jpg" alt="Profile Image">
+          <div class="contact-links">
+            <!-- <a href="#" class="contact-link">Schedule a Call</a>
+              <a href="#" class="contact-link">Send Email</a> -->
+              <button class="btn-calendar">
+              <i class="fas fa-calendar-alt"></i> Schedule a Call
+            </button>
+            <button class="btn-email">
+              <i class="fas fa-envelope"></i> Send Email
+            </button>
+            <button class="btn-projects">
+              <i class="fas fa-folder-open"></i> Projects
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="home-content">
-            <h1>Hi, I'm Lister Y. Solijon</h1>
-            <h3>Aspiring <span class="multiple-text"></span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero harum possimus alias
-                distinctio ratione. Eum doloribus blanditiis quisquam odio facere explicabo enim iste, vitae libero illo
-                aut incidunt amet deserunt illum sint necessitatibus modi, asperiores repellendus consequatur
-                exercitationem ab similique. Aperiam cupiditate odit soluta nam reprehenderit optio fugiat modi?</p>
+    <!-- About Me Section -->
+    <div class="cards-container">
+      <div class="card">
+        <section id="about">
+          <h2>About Me</h2>
+          <div class="about-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, explicabo necessitatibus. Quam non nobis maxime! Ut
+              suscipit facere ea fuga ipsa consequatur quam ad minus excepturi,
+              quis repudiandae beatae hic tenetur ab saepe. Nulla distinctio,
+              non, reprehenderit voluptate recusandae, placeat impedit
+              necessitatibus facere perspiciatis molestias iure quod maxime illo
+              a!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium odit quo recusandae veritatis reprehenderit vero
+              nostrum autem obcaecati enim ipsum inventore, delectus magni,
+              aliquid doloremque provident maiores eveniet saepe, sapiente
+              libero? Sapiente placeat fugit esse unde eaque deleniti libero
+              nemo aliquid minima voluptate. Fugiat molestias earum facere
+              recusandae ipsum? Nobis.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
 
-            <div class="social-media">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Solijon113" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.facebook.com/listersolijon11" target="_blank"><i
-                        class='bx bxl-facebook-circle'></i></a>
-                <a href="https://www.instagram.com/lister.solijon/#" target="_blank"><i
-                        class='bx bxl-instagram'></i></a>
+    <!-- Experience Section -->
+    <div class="cards-container">
+      <div class="card">
+        <section id="experience">
+          <h2>Experience</h2>
+
+          <div class="experience-item">
+            <div class="job-title">
+              WordPress Designer/Developer & SEO Specialist
             </div>
-            <a href="#about" class="btn">About Me</a>
+            <div class="company">Freelance</div>
+            <div class="date">2024 - Present</div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Marketing Analyst</div>
+            <div class="company">JG Superstore</div>
+            <div class="date">2023</div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Content Associate</div>
+            <div class="company">JG Superstore</div>
+            <div class="date">2023</div>
+          </div>
+
+          <div class="experience-item">
+            <div class="job-title">Technical Support Representative</div>
+            <div class="company">ASICS Startup</div>
+            <div class="date">2022</div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="cards-container">
+      <div class="card">
+        <section id="education">
+          <h2>Education</h2>
+          <div class="education-item">BS Information Technology</div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Tech Stack & Certificates Cards -->
+    <div class="cards-container">
+      <!-- Tech Stack Card -->
+      <div class="card">
+        <h3 class="card-title">Tech Stack</h3>
+        <div class="tech-items">
+          <span class="tech-item">HTML/CSS</span>
+          <span class="tech-item">JavaScript</span>
+          <span class="tech-item">React</span>
+          <span class="tech-item">Node.js</span>
+          <span class="tech-item">Python</span>
+          <span class="tech-item">WordPress</span>
+          <span class="tech-item">PHP</span>
+          <span class="tech-item">MySQL</span>
+          <span class="tech-item">MongoDB</span>
+          <span class="tech-item">Figma</span>
+          <span class="tech-item">Git</span>
+          <span class="tech-item">SEO Tools</span>
         </div>
-    </section>
+      </div>
 
-    <!-- End of Home Section Code -->
-
-    <!-- About Section Code -->
-
-    <section class="about" id="about">
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>I'm a BSIT Student</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate voluptatum est inventore ducimus,
-                harum nulla odio optio repellat hic soluta facilis corrupti, assumenda, reiciendis debitis. Aperiam at
-                saepe tenetur assumenda totam, earum deleniti placeat esse iure, aliquid, repellendus perferendis nisi
-                temporibus alias. Maxime fugiat sint a cupiditate excepturi? Ipsa, optio.</p>
-            <a href="#" class="btn">Read More</a>
-
+      <!-- Certificates Card -->
+      <div class="card">
+        <h3 class="card-title">Certificates</h3>
+        <div class="certificate-item">
+          <div class="certificate-name">Full-Stack Web Development</div>
+          <div class="certificate-issuer">Coursera • 2024</div>
         </div>
-
-        <div class="about-img">
-            <img src="picture.jpg" alt="Profile Image">
+        <div class="certificate-item">
+          <div class="certificate-name">UI/UX Design Specialization</div>
+          <div class="certificate-issuer">Google • 2023</div>
         </div>
-    </section>
-
-    <!-- End of About Section Code -->
-
-    <!-- Services Section Code -->
-
-    <section class="services" id="services">
-        <h2 class="heading">My <span>Services</span></h2>
-        <!-- <div class="services-img">
-            <img src="#" alt="Profile Image">
-        </div> -->
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class="bx bx-code"></i>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reprehenderit quibusdam dolor neque
-                    atque quaerat quia minima earum facilis. Quis praesentium exercitationem nobis distinctio magnam.
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-mobile"></i>
-                <h3>Mobile Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reprehenderit quibusdam dolor neque
-                    atque quaerat quia minima earum facilis. Quis praesentium exercitationem nobis distinctio magnam.
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bxl-android"></i>
-                <h3>App Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reprehenderit quibusdam dolor neque
-                    atque quaerat quia minima earum facilis. Quis praesentium exercitationem nobis distinctio magnam.
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+        <div class="certificate-item">
+          <div class="certificate-name">SEO Certification</div>
+          <div class="certificate-issuer">HubSpot Academy • 2023</div>
         </div>
-    </section>
-
-    <!-- End of Services Section Code -->
-
-    <!-- Testimonial Section Code -->
-
-    <section name="testimonial" id="testimonial">
-
-        <div class="testimonial-box">
-            <h2 class="heading">Testimonials</h2>
-
-            <div class="wrapper">
-                <div class="testimonial-item">
-                    <img src="picture.jpg" alt="">
-
-                    <h2>Lister</h2>
-                    <div class="rating">
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio amet, aut omnis ab ullam neque
-                        unde ducimus incidunt error nobis in voluptatibus commodi ea ipsam.</p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="picture.jpg" alt="">
-
-                    <h2>Lister</h2>
-                    <div class="rating">
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio amet, aut omnis ab ullam neque
-                        unde ducimus incidunt error nobis in voluptatibus commodi ea ipsam.</p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="picture.jpg" alt="">
-
-                    <h2>Lister</h2>
-                    <div class="rating">
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                        <i class="bx bxs-star" id="star"></i>
-                    </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio amet, aut omnis ab ullam neque
-                        unde ducimus incidunt error nobis in voluptatibus commodi ea ipsam.</p>
-                </div>
-
-            </div>
+        <div class="certificate-item">
+          <div class="certificate-name">Data Analytics with Python</div>
+          <div class="certificate-issuer">IBM • 2022</div>
         </div>
+      </div>
+    </div>
 
-    </section>
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2026 Lister Solijon. All rights reserved.</p>
+    </div>
+    <!-- </div> -->
 
-    <!-- End of Testimonial Section Code-->
+    <script>
+      // Simple interaction for contact links
+      document.querySelectorAll(".contact-link").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          alert("This would navigate to: " + this.textContent);
+        });
+      });
 
-    <!-- Contact Section Code -->
+      // Simple hover effect for project items
+      document.querySelectorAll(".experience-item").forEach((item) => {
+        item.addEventListener("mouseenter", function () {
+          this.style.backgroundColor = "#fafafa";
+        });
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+        item.addEventListener("mouseleave", function () {
+          this.style.backgroundColor = "transparent";
+        });
+      });
 
-        <form action="3">
-            <div class="input-box">
-                <input type="text" name="fullname" id="fullname" placeholder="Full Name">
-                <input type="email" name="email" id="email" placeholder="Email Address">
-            </div>
+      // Simple hover effect for tech items
+      document.querySelectorAll(".tech-item").forEach((item) => {
+        item.addEventListener("mouseenter", function () {
+          this.style.backgroundColor = "#eaeaea";
+        });
 
-            <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <!-- End of Contact Section Code -->
-
-    <!-- Footer Section Code -->
-
-    <footer class="footer">
-        <div class="social">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/Solijon113" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.facebook.com/listersolijon11" target="_blank"><i
-                        class='bx bxl-facebook-circle'></i></a>
-            <a href="https://www.instagram.com/lister.solijon/#" target="_blank"><i
-                        class='bx bxl-instagram'></i></a>
-        </div>
-        <p class="copyright">
-            &#169; Lister Solijon - All Rights Reserved
-        </p>
-    </footer>
-
-    <!-- End of Footer Section Code -->
-
-    <button id="backToTop" title="Back to top">
-        <i class='bx bx-up-arrow-alt'></i>
-    </button>
-
-
+        item.addEventListener("mouseleave", function () {
+          this.style.backgroundColor = "#f5f5f5";
+        });
+      });
+    </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
-    <script src="back-to-top.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>
