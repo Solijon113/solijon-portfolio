@@ -14,147 +14,280 @@
   <body>
     <!-- <div class="container"> -->
     <!-- Header Section - Matching the image layout -->
-    <div class="header">
+    <div class="header fade-up">
       <div class="header-content">
         <img src="picture.jpg" alt="Profile Picture" class="profile-picture" />
         <div class="header-text">
           <h1>Lister Solijon</h1>
           <p class="location">
-            <img src="location.png" alt=""> Cagayan de Oro City,
-            Philippines
+            <img src="location.png" alt="" /> Cagayan de Oro City, Philippines
           </p>
           <p class="tagline">Aspiring <span class="multiple-text"></span></p>
 
           <div class="contact-links">
             <!-- <a href="#" class="contact-link">Schedule a Call</a>
               <a href="#" class="contact-link">Send Email</a> -->
-              <button class="btn-calendar">
+            <button class="btn-calendar">
               <i class="fas fa-calendar-alt"></i> Schedule a Call
             </button>
             <button class="btn-email">
               <i class="fas fa-envelope"></i> Send Email
             </button>
-            <button class="btn-projects">
+            <!-- <button class="btn-projects">
               <i class="fas fa-folder-open"></i> Projects
-            </button>
+            </button> -->
+            <a href="#projects" class="btn-projects">
+              <i class="fas fa-folder-open"></i> Projects
+            </a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- About Me Section -->
-    <div class="cards-container">
-      <div class="card">
+    <div class="cards-container two-column fade-up">
+      <div class="card card-about">
         <section id="about">
-          <h2>About Me</h2>
+          <h2>
+            <img src="info.png" alt="" style="width: 20px; height: 20px;" />
+            About
+          </h2>
           <div class="about-text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, explicabo necessitatibus. Quam non nobis maxime! Ut
-              suscipit facere ea fuga ipsa consequatur quam ad minus excepturi,
-              quis repudiandae beatae hic tenetur ab saepe. Nulla distinctio,
-              non, reprehenderit voluptate recusandae, placeat impedit
-              necessitatibus facere perspiciatis molestias iure quod maxime illo
-              a!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium odit quo recusandae veritatis reprehenderit vero
-              nostrum autem obcaecati enim ipsum inventore, delectus magni,
-              aliquid doloremque provident maiores eveniet saepe, sapiente
-              libero? Sapiente placeat fugit esse unde eaque deleniti libero
-              nemo aliquid minima voluptate. Fugiat molestias earum facere
-              recusandae ipsum? Nobis.
+              I am a BSIT student at Tagoloan Community College and currently a
+              student intern. I am an aspiring web developer who is eager to
+              learn and improve my skills in web development and information
+              technology. I enjoy working on projects that help me gain hands-on
+              experience and grow my knowledge. I am motivated, willing to
+              learn, and excited to build my career in the IT field.
             </p>
           </div>
         </section>
       </div>
+
+      <!-- Tech Stack Card -->
+      <div class="card card-tech">
+        <h3 class="card-title">
+          <img src="dev.png" alt="icon" style="width: 20px; height: 20px;" />
+          Tech Stack
+        </h3>
+
+        <div class="tech-group">
+          <p class="tech-label">Frontend</p>
+          <div class="tech-items">
+            <span class="tech-item">HTML</span>
+            <span class="tech-item">CSS</span>
+            <span class="tech-item">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="tech-group">
+          <p class="tech-label">Backend</p>
+          <div class="tech-items">
+            <span class="tech-item">PHP</span>
+            <span class="tech-item">MySQL</span>
+          </div>
+        </div>
+        <div class="tech-group">
+          <p class="tech-label">Tools</p>
+          <span class="tech-item">Git</span>
+          <span class="tech-item">Github</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Experience Section -->
-    <div class="cards-container">
+    <!-- Projects Section -->
+    <div class="cards-container fade-up">
       <div class="card">
-        <section id="experience">
-          <h2>Experience</h2>
+        <section id="projects">
+          <h2>Projects</h2>
 
-          <div class="experience-item">
-            <div class="job-title">
-              WordPress Designer/Developer & SEO Specialist
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-item project-card">
+              <a
+                href="https://tbdots-tagoloan.com/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-image">
+                  <img src="pms.png" alt="Project 1" />
+                </div>
+                <div class="project-content">
+                  <div class="company-title">TB DOTS Tagoloan</div>
+                  <div class="title">Patient Monitoring System</div>
+                  <!-- <div class="date">2024 - Present</div> -->
+                </div>
+              </a>
             </div>
-            <div class="company">Freelance</div>
-            <div class="date">2024 - Present</div>
-          </div>
 
-          <div class="experience-item">
-            <div class="job-title">Marketing Analyst</div>
-            <div class="company">JG Superstore</div>
-            <div class="date">2023</div>
-          </div>
+            <!-- Project 2 -->
+            <div class="project-item project-card">
+              <a href="#" class="project-link">
+                <div class="project-image">
+                  <img src="tbdots.png" alt="Project 2" />
+                </div>
+                <div class="project-content">
+                  <div class="company-title">TB DOTS Tagoloan</div>
+                  <div class="title">Treatment Card Mobile Application</div>
+                  <!-- <div class="date">2023</div> -->
+                </div>
+              </a>
+            </div>
 
-          <div class="experience-item">
-            <div class="job-title">Content Associate</div>
-            <div class="company">JG Superstore</div>
-            <div class="date">2023</div>
+            <!-- Project 3 -->
+            <div class="project-item project-card">
+              <a href="#" class="project-link">
+                <div class="project-image">
+                  <img src="pos.png" alt="Project 2" />
+                </div>
+                <div class="project-content">
+                  <div class="company-title">Bryan Plant Nursey</div>
+                  <div class="title">POS & Inventory Management System</div>
+                  <!-- <div class="date">2023</div> -->
+                </div>
+              </a>
+            </div>
           </div>
-
-          <div class="experience-item">
-            <div class="job-title">Technical Support Representative</div>
-            <div class="company">ASICS Startup</div>
-            <div class="date">2022</div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <!-- Education Section -->
-    <div class="cards-container">
-      <div class="card">
-        <section id="education">
-          <h2>Education</h2>
-          <div class="education-item">BS Information Technology</div>
         </section>
       </div>
     </div>
 
     <!-- Tech Stack & Certificates Cards -->
-    <div class="cards-container">
-      <!-- Tech Stack Card -->
-      <div class="card">
-        <h3 class="card-title">Tech Stack</h3>
-        <div class="tech-items">
-          <span class="tech-item">HTML/CSS</span>
-          <span class="tech-item">JavaScript</span>
-          <span class="tech-item">React</span>
-          <span class="tech-item">Node.js</span>
-          <span class="tech-item">Python</span>
-          <span class="tech-item">WordPress</span>
-          <span class="tech-item">PHP</span>
-          <span class="tech-item">MySQL</span>
-          <span class="tech-item">MongoDB</span>
-          <span class="tech-item">Figma</span>
-          <span class="tech-item">Git</span>
-          <span class="tech-item">SEO Tools</span>
-        </div>
-      </div>
-
+    <div class="cards-container fade-up">
       <!-- Certificates Card -->
       <div class="card">
         <h3 class="card-title">Certificates</h3>
-        <div class="certificate-item">
-          <div class="certificate-name">Full-Stack Web Development</div>
-          <div class="certificate-issuer">Coursera • 2024</div>
-        </div>
-        <div class="certificate-item">
-          <div class="certificate-name">UI/UX Design Specialization</div>
-          <div class="certificate-issuer">Google • 2023</div>
-        </div>
-        <div class="certificate-item">
-          <div class="certificate-name">SEO Certification</div>
-          <div class="certificate-issuer">HubSpot Academy • 2023</div>
-        </div>
-        <div class="certificate-item">
-          <div class="certificate-name">Data Analytics with Python</div>
-          <div class="certificate-issuer">IBM • 2022</div>
+
+        <div class="certificate-slider">
+          <div class="certificate-track">
+            <div class="certificate-item active">
+              <img
+                src="cert1.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "Creative AI tools: A Critical Survey"
+              </div>
+              <div class="certificate-issuer">UPISC • 2024</div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="cert2.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "Digital Bayanihan: Para sa Kabataang Ligtas at Protektado
+                Online"
+              </div>
+              <div class="certificate-issuer">DICT-CAR • 2025</div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="cert3.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "Software Development and Design Thinking"
+              </div>
+              <div class="certificate-issuer">DICT 10 • 2025</div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="cert4.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "How to Counter-Act when Hacked?"
+              </div>
+              <div class="certificate-issuer">DICT • 2024</div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="cert5.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "Gabay Para sa Digital na Kampanyahan sa Halalan 2025"
+              </div>
+              <div class="certificate-issuer">DICT • 2025</div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="cert6.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "Chaos and Emergence: Catalysts in Art and Science"
+              </div>
+              <div class="certificate-issuer">UPISC • 2024</div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="cert7.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "From Code to Intelligence: The Rise of AI in Software
+                Development"
+              </div>
+              <div class="certificate-issuer">DICT Palawan • 2025</div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="cert8.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "Digital @nthropology: How Humans Make Sense of AI and Other
+                Emergent Technologies"
+              </div>
+              <div class="certificate-issuer">UPISC • 2024</div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="cert9.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "Web Development: An Introductory Workshop"
+              </div>
+              <div class="certificate-issuer">DICT Region 2 • 2025</div>
+            </div>
+
+            <div class="certificate-item">
+              <img
+                src="cert10.png"
+                alt="Full-Stack Web Development"
+                class="certificate-img"
+              />
+              <div class="certificate-name">
+                "CYBERSTORYAHANAY PRESENTS: SAFER INTERNET WEEK WITH DICT AKLAN"
+              </div>
+              <div class="certificate-issuer">DICT Aklan • 2025</div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="slider-btn prev">‹</button>
+          <button class="slider-btn next">›</button>
         </div>
       </div>
     </div>
@@ -165,38 +298,9 @@
     </div>
     <!-- </div> -->
 
-    <script>
-      // Simple interaction for contact links
-      document.querySelectorAll(".contact-link").forEach((link) => {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          alert("This would navigate to: " + this.textContent);
-        });
-      });
-
-      // Simple hover effect for project items
-      document.querySelectorAll(".experience-item").forEach((item) => {
-        item.addEventListener("mouseenter", function () {
-          this.style.backgroundColor = "#fafafa";
-        });
-
-        item.addEventListener("mouseleave", function () {
-          this.style.backgroundColor = "transparent";
-        });
-      });
-
-      // Simple hover effect for tech items
-      document.querySelectorAll(".tech-item").forEach((item) => {
-        item.addEventListener("mouseenter", function () {
-          this.style.backgroundColor = "#eaeaea";
-        });
-
-        item.addEventListener("mouseleave", function () {
-          this.style.backgroundColor = "#f5f5f5";
-        });
-      });
-    </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="scroll.js"></script>
   </body>
 </html>
