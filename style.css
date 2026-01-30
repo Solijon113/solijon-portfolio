@@ -421,25 +421,72 @@ h2 {
 
   .header-content {
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
     text-align: center;
+    gap: 12px;
   }
 
   .profile-picture {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+    margin: 0;
+  }
+
+  .header-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .location {
+    justify-content: center;
   }
 
   .contact-links {
     align-items: center;
   }
+
+    .contact-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .btn-calendar,
+  .btn-email,
+  .btn-projects {
+    width: 50%;
+    justify-content: center;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-image {
+    height: 150px;
+  }
+
+  .certificate-img {
+    height: 150px;
+  }
+
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 /* Fade Up Animation */
+
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
