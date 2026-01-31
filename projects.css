@@ -144,7 +144,7 @@ section {
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -173,7 +173,7 @@ h2 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -274,7 +274,7 @@ h2 {
   color: #000;
   margin-bottom: 15px;
   padding-bottom: 8px;
-  /* border-bottom: 1px solid #eaeaea; */
+  border-bottom: 1px solid #eaeaea;
 }
 
 /* Tech Stack Items */
@@ -487,60 +487,50 @@ h2 {
   transform: translateY(0);
 }
 
-.view-all {
-  font-size: 12px;
-  color: #1e272e;
+.projects-nav {
+  margin: 20px 0;
+}
+
+.back-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline; /* aligns small and large text nicely */
+  gap: 10px;             /* space between link and main title */
+  font-family: sans-serif;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;              /* space between arrow and text */
   text-decoration: none;
+  color: #1e272e;
   font-weight: 500;
-  transition: color 0.2s ease;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-/* .view-all:hover {
+.back-home .arrow {
+  font-size: 1.2rem;      /* bigger arrow */
+  line-height: 1;
+}
+
+.main-title {
+  font-size: 1.5rem;     /* bigger bold text */
+  font-weight: 700;
   color: #000;
-} */
-
-.projects-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
 }
 
-.projects-header h2 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.info-icon {
-  height: 18px;
-  width: 18px;
-}
-
-.dev-icon {
-  height: 18px;
-  width: 18px;
-}
-
-.clock-icon {
-  height: 18px;
-  width: 18px;
-}
-
-.cert-icon {
-  height: 18px;
-  width: 18px;
-}
-
-.certificates-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24px;
-}
-
-.certificates-header h2 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 600;
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .back-row {
+    gap: 5px;
+  }
+  .back-home {
+    font-size: 0.9rem;
+  }
+  .main-title {
+    font-size: 1.2rem;
+    flex-basis: 100%;   /* move to next line if needed */
+  }
 }
