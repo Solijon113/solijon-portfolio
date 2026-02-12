@@ -1,55 +1,19 @@
-const track = document.querySelector('.certificate-track');
-  const items = document.querySelectorAll('.certificate-item');
-  const nextBtn = document.querySelector('.slider-btn.next');
-  const prevBtn = document.querySelector('.slider-btn.prev');
+const items = document.querySelectorAll(".certificate-item");
+let currentIndex = 0;
+const intervalTime = 4000; // 3 seconds
 
-  let index = 0;
-  const totalItems = items.length - 1; // Exclude the cloned item
+function showSlide(index) {
+  items.forEach(item => item.classList.remove("active"));
+  items[index].classList.add("active");
+}
 
-  function updateSlide(transition = true) {
-    if (transition) {
-      track.style.transition = 'transform 0.5s ease-in-out';
-    } else {
-      track.style.transition = 'none';
-    }
-    track.style.transform = `translateX(-${index * 100}%)`;
+function nextSlide() {
+  currentIndex++;
+  if (currentIndex >= items.length) {
+    currentIndex = 0;
   }
+  showSlide(currentIndex);
+}
 
-  nextBtn.addEventListener('click', () => {
-    index++;
-    updateSlide();
-    
-    if (index === totalItems) {
-      setTimeout(() => {
-        index = 0;
-        updateSlide(false);
-      }, 500);
-    }
-  });
-
-  prevBtn.addEventListener('click', () => {
-    if (index === 0) {
-      index = totalItems;
-      updateSlide(false);
-      setTimeout(() => {
-        index = totalItems - 1;
-        updateSlide();
-      }, 20);
-    } else {
-      index--;
-      updateSlide();
-    }
-  });
-
-  // Auto slide
-  setInterval(() => {
-    index++;
-    updateSlide();
-    
-    if (index === totalItems) {
-      setTimeout(() => {
-        index = 0;
-        updateSlide(false);
-      }, 500);
-    }
-  }, 4000);
+// Start auto slideshow
+setInterval(nextSlide, intervalTime);
